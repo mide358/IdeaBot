@@ -1,33 +1,18 @@
-/**
-Challenge:
+document.getElementById('get-activity').addEventListener('click', getResponse);
 
-- Make the styling more exciting once an activity idea comes
-back from the Bored API
-    - Resources: DOM element "classList" property, uigradients.com,
-      Google Fonts, color.adobe.com
-    - Some ideas:
-      - Change the title from "BoredBot" to something more exciting!
-      - Change the background to something less drab.
-      - Bonus: Animate something on the screen to move around and add more
-        excitement to the page
-*/
+async function getResponse() {
+  try {
+    const response = await fetch('https://apis.scrimba.com/bored/api/activity');
 
-document.getElementById('get-activity').addEventListener('click', function () {
-  fetch('https://apis.scrimba.com/bored/api/activity')
-    .then((response) => response.json())
-    .then((data) => {
-      document.getElementById('activity').textContent = data.activity;
+    const data = await response.json();
+    document.getElementById('activity').textContent = data.activity;
 
-      generateLightColors();
-      generateDarkColors();
-    });
-});
-
-// generate random colors
-// const setRandom = () => {
-//   const randomColor = Math.floor(Math.random() * 16777215).toString(16);
-//   document.body.style.backgroundColor = '#' + randomColor;
-// };
+    generateLightColors();
+    generateDarkColors();
+  } catch (err) {
+    console.error(err);
+  }
+}
 
 const generateLightColors = () => {
   let color = '#';

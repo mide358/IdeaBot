@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/mide358/IdeaBot/issues"
   },
-  "homepage": "https://github.com/mide358/IdeaBot#readme"
+  "homepage": "https://github.com/mide358/IdeaBot#readme",
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "babel-jest": "^28.1.0",
+    "jest": "^28.1.0"
+  }
 }
