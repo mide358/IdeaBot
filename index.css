@@ -1,0 +1,27 @@
+body {
+  /* uigradients.com */
+  background-color: #bdc3c7;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  font-family: Oxygen, sans-serif;
+}
+
+main {
+  margin-top: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+button {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: red;
+  border: 1px solid darkred;
+  cursor: pointer;
+}
+
+#activity {
+  text-shadow: 1px 1px 3px white;
+}

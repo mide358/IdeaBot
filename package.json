@@ -1,0 +1,23 @@
+{
+  "name": "ideabot",
+  "version": "1.0.0",
+  "description": "An bot that generates random ideas",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mide358/IdeaBot.git"
+  },
+  "keywords": [
+    "javascript",
+    "bot"
+  ],
+  "author": "Iyimide Adegunloye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mide358/IdeaBot/issues"
+  },
+  "homepage": "https://github.com/mide358/IdeaBot#readme"
+}
